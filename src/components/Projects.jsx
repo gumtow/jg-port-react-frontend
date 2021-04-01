@@ -8,7 +8,7 @@ const Projects = (props) => {
 
   React.useEffect(() => {
     axios
-      .get("http://134.209.114.110/wp-json/wp/v2/project")
+      .get("https://api.jessegumtow.com/wp-json/wp/v2/project")
       .then((res) => setWpProjects(res.data))
       .catch((e) => console.log(e));
   }, []);
