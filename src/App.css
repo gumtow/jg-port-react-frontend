@@ -20,15 +20,31 @@
   box-shadow: 0 0 25px rgb(0,0,0,.25);
 }
 
-#project {
+.project {
   box-sizing: border-box;
-  min-height: 150px;
+  min-height: 175px;
   background:rgb(60, 59, 59);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
-  margin: 15px 0;
+  margin: 15px -15px;
   border-radius: .3rem;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
   
+}
+
+.project-clicked{
+  box-sizing: border-box;
+  min-height: 175px;
+  background:rgb(172, 59, 59);
+  display:flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  margin: 15px -15px;
+  border-radius: .3rem;
+  flex-direction: column;
+  padding: 1rem 1rem 0;
 }

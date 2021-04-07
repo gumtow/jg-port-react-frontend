@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { FlexCenter, SectionMargin } from "../styles/layout";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
+import Project from "./Project";
 
 const Projects = (props) => {
   const [wpProjects, setWpProjects] = React.useState([]);
@@ -21,22 +22,13 @@ const Projects = (props) => {
             <FlexCenter>
               <h3>Recent Projects</h3>
             </FlexCenter>
-            <Row>
-              {wpProjects.map((project, i) => (
-                <Col sm={6} key={i}>
-                  <div id="project">
-                    <Container>
-                      <Row>
-                        <Col lg={12}><h4>{project.title.rendered}</h4></Col>
-                      </Row>
-                      <Row>
-                        <Col lg={12}><p>{project.acf.project_description}</p></Col>
-                      </Row>
-                    </Container>
-                  </div>
-                </Col>
-              ))}
-            </Row>
+            <Container>
+              <Row>
+                {wpProjects.map((project, i) => (
+                  <Project project={project} i={i} />
+                ))}
+              </Row>
+            </Container>
           </div>
         </SectionMargin>
       </div>
