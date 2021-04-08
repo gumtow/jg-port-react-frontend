@@ -38,7 +38,10 @@
 .project-clicked{
   box-sizing: border-box;
   min-height: 175px;
-  background:rgb(172, 59, 59);
+  /* background:rgb(207, 160, 160);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
   display:flex;
   justify-content: center;
   align-items: flex-start;

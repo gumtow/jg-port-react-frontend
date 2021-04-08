@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
 const Project = (props) => {
   const [clicked, setClicked] = React.useState(false);
@@ -8,10 +8,10 @@ const Project = (props) => {
     return (
       <Col sm={6}>
         <Container onClick={() => setClicked(!clicked)}>
-          <div className="project-clicked">
+          <div className="project-clicked" style = {{ background: `url(${props.project.acf.project_main_image.url})`, backgroundPosition:'center' }}>
             <Row>
               <Col lg={12}>
-                <a href={props.project.acf.project_link}>Go to site</a>
+              <Button variant="secondary" href={props.project.acf.project_link} >Project Website</Button>
               </Col>
             </Row>
             <Row>
