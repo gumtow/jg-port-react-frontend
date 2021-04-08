@@ -8,9 +8,11 @@ import Footer from "./Footer";
 const Main = (props) => {
   return (
     <div>
-      <About />
-      <Projects />
-      <Links />
+      <div className="content-wrap">
+        <About />
+        <Projects />
+        <Links />
+      </div>
       <Footer />
     </div>
   );

@@ -11,12 +11,12 @@ const Project = (props) => {
           <div className="project-clicked" style = {{ background: `url(${props.project.acf.project_main_image.url})`, backgroundPosition:'center' }}>
             <Row>
               <Col lg={12}>
-              <Button variant="secondary" href={props.project.acf.project_link} >Project Website</Button>
+              <Button variant="secondary" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
               </Col>
             </Row>
-            <Row>
+            <Row className={props.project.acf.project_github ? null : 'hide'}>
               <Col lg={12}>
-                <p>{props.project.acf.project_description}</p>
+              <Button variant="secondary" target="_blank" href={props.project.acf.project_github} >GitHub Link</Button>
               </Col>
             </Row>
           </div>

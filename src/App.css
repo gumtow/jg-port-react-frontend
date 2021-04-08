@@ -1,3 +1,12 @@
+.App{
+  position:relative;
+  min-height: 100%;
+}
+
+.content-wrap{
+  padding-bottom: 10rem;
+}
+
 #about,
 #footer {
   background-color: #3c3b3b;
@@ -11,6 +20,13 @@
     rgba(60, 59, 59, 1) 0%,
     rgba(255, 255, 255, 1) 85%
   );
+}
+
+#footer{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: 10rem;
 }
 
 #project-module{
@@ -38,16 +54,24 @@
 .project-clicked{
   box-sizing: border-box;
   min-height: 175px;
-  /* background:rgb(207, 160, 160);
+  background:rgb(207, 160, 160);
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   display:flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   color: #fff;
   margin: 15px -15px;
   border-radius: .3rem;
   flex-direction: column;
   padding: 1rem 1rem 0;
+}
+
+.project-clicked .btn{
+  margin:.25rem;
+}
+
+.hide{
+  display: none;
 }
