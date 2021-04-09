@@ -22,6 +22,9 @@ const Projects = (props) => {
             <FlexCenter>
               <h3>Recent Projects</h3>
             </FlexCenter>
+            <FlexCenter>
+              <p>Recent Projects</p>
+            </FlexCenter>
             <Container>
               <Row>
                 {wpProjects.map((project, i) => (

@@ -1,26 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
+import axios from "axios";
 import { FlexCenter, SectionMargin } from "../styles/layout";
-import { Button, Form } from "react-bootstrap";
+import { Button, Row, Col, Container } from "react-bootstrap";
 
 const Links = (props) => {
-  const [test, setTest] = useState("");
-  const [checkbox, setCheckbox] = useState(true);
+  // const [test, setTest] = useState("");
+  // const [checkbox, setCheckbox] = useState(true);
 
-  const handleSubmit = (e) => {
-    console.log(test);
-    e.preventDefault();
-  };
+  // const handleSubmit = (e) => {
+  //   console.log(test);
+  //   e.preventDefault();
+  // };
+
+  const [wpLinks, setWpLinks] = React.useState([]);
+
+  React.useEffect(() => {
+    axios
+      .get("https://api.jessegumtow.com/wp-json/wp/v2/links")
+      .then((res) => setWpLinks(res.data.reverse()))
+      .catch((e) => console.log(e));
+  }, []);
 
   return (
     <div className="container-fluid" id="links">
       <div className="container">
         <SectionMargin>
           <FlexCenter>
-            <Button variant="success" href="#" block>
-              Links
-            </Button>
+            <Container>
+              {wpLinks.map((link, i) => (
+                <Row>
+                  <Col lg={12}>
+                    <Button
+                      variant="success"
+                      target="_blank"
+                      href={link.acf.link_url}
+                      block
+                    >
+                      {link.acf.link_text}
+                    </Button>
+                  </Col>
+                </Row>
+              ))}
+            </Container>
           </FlexCenter>
-          <Form
+          {/* <Form
             onSubmit={(e) => {
               handleSubmit(e);
             }}
@@ -46,7 +69,7 @@ const Links = (props) => {
               />
             </Form.Group>
             <input className="submit" type="submit" value="log test" />
-          </Form>
+          </Form> */}
         </SectionMargin>
       </div>
     </div>
