@@ -12,6 +12,7 @@ const Links = (props) => {
   //   e.preventDefault();
   // };
 
+
   const [wpLinks, setWpLinks] = React.useState([]);
 
   React.useEffect(() => {
@@ -28,7 +29,7 @@ const Links = (props) => {
           <FlexCenter>
             <Container>
               {wpLinks.map((link, i) => (
-                <Row>
+                <Row key={i}>
                   <Col lg={12}>
                     <Button
                       variant="success"

@@ -28,7 +28,7 @@ const Projects = (props) => {
             <Container>
               <Row>
                 {wpProjects.map((project, i) => (
-                  <Project project={project} i={i} />
+                  <Project project={project} i={i} key={i} />
                 ))}
               </Row>
             </Container>
