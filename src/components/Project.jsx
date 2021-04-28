@@ -25,7 +25,7 @@ const Project = (props) => {
     );
   } else {
     return (
-      <Col sm={6}>
+      <Col lg={6}>
         <Container onClick={() => setClicked(!clicked)}>
           <div className="project">
             <Row>
