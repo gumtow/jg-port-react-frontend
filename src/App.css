@@ -7,17 +7,28 @@
   padding-bottom: 10rem;
 }
 
-#about,
+#about{
+  background: url("https://api.jessegumtow.com/wp-content/uploads/2021/04/GD3D.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #171717;
+  color:#fff;
+  min-height: 30vh;
+}
 #footer {
   background-color: #3c3b3b;
   color: #ffffff;
 }
 
+#profile-img{
+  max-width:400px;
+}
+
 #projects {
-  background: rgb(60, 59, 59);
   background: linear-gradient(
     180deg,
-    rgba(60, 59, 59, 1) 0%,
+    rgba(23, 23, 23, 1) 0%,
     rgba(255, 255, 255, 1) 85%
   );
 }
@@ -33,7 +44,14 @@
   background: rgba(255, 255, 255, .65);
   border-radius: .6rem;
   padding:2rem;
-  box-shadow: 0 0 25px rgb(0,0,0,.25);
+  /* box-shadow: 0 0 25px rgb(0,0,0,.25); */
+}
+
+.flex-div{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .project {
