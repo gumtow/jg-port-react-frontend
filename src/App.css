@@ -5,7 +5,7 @@
 
 .content-wrap{
   padding-bottom: 10rem;
-  background: #000000;
+  background: #fafafa;
 }
 
 h1, h5 {
@@ -14,12 +14,12 @@ h1, h5 {
 }
 
 #about{
-  background: url("https://api.jessegumtow.com/wp-content/uploads/2021/04/explode-edit2.jpg");
+  background: url("https://api.jessegumtow.com/wp-content/uploads/2021/05/jg3d-v2.png");
   background-size:contain;
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #000000;
-  color:#fff;
+  background-color: #fafafa;
+  color:rgb(65, 65, 65);
   min-height: 45vh;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ h1, h5 {
 }
 
 #projects {
-  background:#000000;
+  /* background:#000000; */
 }
 
 #footer{

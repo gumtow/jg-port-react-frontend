@@ -22,12 +22,12 @@ const About = (props) => {
                 </div>
               </Col>
               <Col>
-                <img id="profile-img" src="https://api.jessegumtow.com/wp-content/uploads/2021/04/Circle_jg-profile.png" alt="Jesse Gumtow" />
+                {/* <img id="profile-img" src="https://api.jessegumtow.com/wp-content/uploads/2021/04/Circle_jg-profile.png" alt="Jesse Gumtow" /> */}
               </Col>
             </Row>
             <Row>
               <Col md={3}>
-                <Button variant="outline-light" block>work</Button>
+                <Button variant="outline-dark" block>work</Button>
               </Col>
               <Col md={3}>
                 <Button variant="outline-info" block>Let's Connect</Button>
