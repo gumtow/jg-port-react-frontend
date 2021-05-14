@@ -20,11 +20,11 @@ const Projects = (props) => {
         <SectionMargin>
           <div id="project-module">
             <FlexCenter>
-              <h3>Recent Projects</h3>
+              <h2>Recent Projects</h2>
             </FlexCenter>
-            <FlexCenter>
+            {/* <FlexCenter>
               <p>Recent Projects</p>
-            </FlexCenter>
+            </FlexCenter> */}
             <Container>
               <Row>
                 {wpProjects.map((project, i) => (

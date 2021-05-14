@@ -8,7 +8,12 @@ const Project = (props) => {
     return (
       <Col sm={6}>
         <Container onClick={() => setClicked(!clicked)}>
-          <div className="project-clicked" style = {{ background: `url(${props.project.acf.project_main_image.url})`, backgroundPosition:'center' }}>
+          <div className="project-clicked" >
+          <Row>
+              <Col lg={12}>
+                <p>{props.project.acf.project_description}</p>
+              </Col>
+            </Row>
             <Row>
               <Col lg={12}>
               <Button variant="secondary" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
@@ -27,15 +32,12 @@ const Project = (props) => {
     return (
       <Col lg={6}>
         <Container onClick={() => setClicked(!clicked)}>
-          <div className="project">
-            <Row>
+          <div className="project flex-div" style = {{ background: `url(${props.project.acf.project_main_image.url})`, backgroundPosition:'center' }}>
+            <Row style={{"width":"100%"}}>
               <Col lg={12}>
-                <h4>{props.project.title.rendered}</h4>
-              </Col>
-            </Row>
-            <Row>
-              <Col lg={12}>
-                <p>{props.project.acf.project_description}</p>
+                
+                <h3 style={{"text-align": "center"}}>{props.project.title.rendered}</h3>
+                
               </Col>
             </Row>
           </div>
