@@ -1,4 +1,5 @@
 import React from "react";
+import { ProjectStyle } from "../styles/layout"
 import { Row, Col, Container, Button } from "react-bootstrap";
 
 const Project = (props) => {
@@ -9,19 +10,19 @@ const Project = (props) => {
       <Col sm={6}>
         <Container onClick={() => setClicked(!clicked)}>
           <div className="project-clicked" >
-          <Row>
+            <Row>
               <Col lg={12}>
                 <p>{props.project.acf.project_description}</p>
               </Col>
             </Row>
             <Row>
               <Col lg={12}>
-              <Button variant="secondary" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
+                <Button variant="secondary" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
               </Col>
             </Row>
             <Row className={props.project.acf.project_github ? null : 'hide'}>
               <Col lg={12}>
-              <Button variant="secondary" target="_blank" href={props.project.acf.project_github} >GitHub Link</Button>
+                <Button variant="secondary" target="_blank" href={props.project.acf.project_github} >GitHub Link</Button>
               </Col>
             </Row>
           </div>
@@ -32,15 +33,15 @@ const Project = (props) => {
     return (
       <Col lg={6}>
         <Container onClick={() => setClicked(!clicked)}>
-          <div className="project flex-div" style = {{ background: `url(${props.project.acf.project_main_image.url})`, backgroundPosition:'center' }}>
-            <Row style={{"width":"100%"}}>
+          <ProjectStyle bg={props.project.acf.project_main_image.url} className="flex-div">
+            <Row style={{ "width": "100%" }}>
               <Col lg={12}>
-                
-                <h3 style={{"text-align": "center"}}>{props.project.title.rendered}</h3>
-                
+
+                <h3 style={{ "text-align": "center" }}>{props.project.title.rendered}</h3>
+
               </Col>
             </Row>
-          </div>
+          </ProjectStyle>
         </Container>
       </Col>
     );
