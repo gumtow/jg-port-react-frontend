@@ -28,7 +28,7 @@ const About = (props) => {
                       <Button variant="outline-dark" block>work</Button>
                     </Col>
                     <Col md={6}>
-                      <Button variant="outline-info" block>Let's Connect</Button>
+                      <Button variant="outline-info" href="mailto:gumtow@gmail.com" block>Let's Connect</Button>
                     </Col>
                   </Row>
                 </div>

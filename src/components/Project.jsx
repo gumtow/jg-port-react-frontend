@@ -17,12 +17,12 @@ const Project = (props) => {
             </Row>
             <Row>
               <Col lg={12}>
-                <Button variant="secondary" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
+                <Button variant="info" target="_blank" href={props.project.acf.project_link} >Project Website</Button>
               </Col>
             </Row>
             <Row className={props.project.acf.project_github ? null : 'hide'}>
               <Col lg={12}>
-                <Button variant="secondary" target="_blank" href={props.project.acf.project_github} >GitHub Link</Button>
+                <Button variant="light" target="_blank" href={props.project.acf.project_github} >GitHub Link</Button>
               </Col>
             </Row>
           </div>

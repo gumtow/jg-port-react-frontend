@@ -41,19 +41,23 @@ box-sizing: border-box;
     height: 125%;
     background: url(${props => props.bg});
     background-size:100%;
-    filter: brightness(50%) opacity(30%) blur(20px);
+    filter: brightness(50%) opacity(50%) blur(5px);
   }
 
   &:hover:before{
     width: 115%; 
     height: 115%;
-    filter: brightness(100%) opacity(70%) blur(0px);  
+    filter: brightness(100%) opacity(100%) blur(0px);  
     transition: all .3s;
   }
 
   :hover {
+    h3{
+      font-size: 2rem;
+      transition: all .3s;
+    }
     box-shadow: 0 0 25px rgb(94,94,94,.75);
+    text-shadow: 0 0 15px rgb(0,0,0,.9);
     transition: all .3s;
   }
-  
 `;
