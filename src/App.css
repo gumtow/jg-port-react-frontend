@@ -1,11 +1,12 @@
-.App{
-  position:relative;
+.App {
+  position: relative;
   min-height: 100vh;
 }
 
-.content-wrap{
+.content-wrap {
   padding-bottom: 10rem;
-  background: #fafafa;
+  background: rgb(224, 241, 247);
+  background: linear-gradient(45deg, rgba(224, 241, 247, 1) 0%, rgba(243, 255, 251, 1) 66%, rgba(240, 240, 240, 1) 100%);
 }
 
 h1, h5 {
@@ -13,69 +14,70 @@ h1, h5 {
   line-height: 1.5;
 }
 
-#about{
+#about {
   /* background: url("https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png"); */
-  background-size:contain;
+  background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
-  background-color: #fafafa;
-  color:rgb(65, 65, 65);
+  /* background-color: #fafafa; */
+  color: rgb(65, 65, 65);
   min-height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
+
 #footer {
   background-color: #292a33;
   color: #ffffff;
 }
 
-#hello{
+#hello {
   font-size: 8rem;
 }
 
-#profile-img{
-  max-width:300px;
+#profile-img {
+  max-width: 300px;
 }
 
 #projects {
   /* background:#000000; */
 }
 
-#footer{
-  position:absolute;
-  bottom:0;
-  width:100%;
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 10rem;
 }
 
-#project-module{
+#project-module {
   background: transparent;
   border-radius: .6rem;
-  padding:2rem;
+  padding: 2rem;
   /* box-shadow: 0 0 25px rgb(0,0,0,.25); */
 }
 
-.row{
-  margin-bottom:1rem;
+.row {
+  margin-bottom: 1rem;
 }
 
-.flex-div{
+.flex-div {
   display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
-
-.project-clicked{
+.project-clicked {
   box-sizing: border-box;
   min-height: 250px;
-  background:var(--dark);
+  background: var(--dark);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -86,16 +88,16 @@ h1, h5 {
   transition: all .5s;
 }
 
-.project-clicked .btn{
-  margin:.25rem;
+.project-clicked .btn {
+  margin: .25rem;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-@media (min-width:1200px){
-  .container{
-    max-width:1500px;
+@media (min-width:1200px) {
+  .container {
+    max-width: 1500px;
   }
 }

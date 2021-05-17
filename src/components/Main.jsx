@@ -1,5 +1,6 @@
 import React from "react";
 
+import Navigation from "./Nav";
 import About from "./About";
 import Projects from "./Projects";
 import Links from "./Links";
@@ -9,6 +10,7 @@ const Main = (props) => {
   return (
     <div>
       <div className="content-wrap">
+        <Navigation />
         <About />
         <Projects />
         <Links />
