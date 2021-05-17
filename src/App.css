@@ -15,11 +15,9 @@ h1, h5 {
 }
 
 #about {
-  /* background: url("https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png"); */
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
-  /* background-color: #fafafa; */
   color: rgb(65, 65, 65);
   min-height: 45vh;
   display: flex;
@@ -41,9 +39,6 @@ h1, h5 {
   max-width: 300px;
 }
 
-#projects {
-  /* background:#000000; */
-}
 
 #footer {
   position: absolute;
@@ -52,12 +47,6 @@ h1, h5 {
   height: 10rem;
 }
 
-#project-module {
-  background: transparent;
-  border-radius: .6rem;
-  padding: 2rem;
-  /* box-shadow: 0 0 25px rgb(0,0,0,.25); */
-}
 
 .row {
   margin-bottom: 1rem;

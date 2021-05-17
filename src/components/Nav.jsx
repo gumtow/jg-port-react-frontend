@@ -5,19 +5,19 @@ const Navigation = () => {
 
     return (
         <Container>
-            <Navbar className="" bg="none" expand="lg">
+            <Navbar bg="none" expand="lg">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Brand>Jesse Gumtow</Navbar.Brand>
                 <Navbar.Collapse className="justify-content-end mr-auto" id="basic-navbar-nav">
                     <Nav >
                         <Nav.Item>
-                            <Nav.Link href="#">About</Nav.Link>
+                            <Nav.Link href="#about">About</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#">Work</Nav.Link>
+                            <Nav.Link href="#projects">Work</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link href="#">Other</Nav.Link>
+                            <Nav.Link href="#links">Other</Nav.Link>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
