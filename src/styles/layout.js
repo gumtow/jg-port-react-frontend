@@ -40,7 +40,8 @@ box-sizing: border-box;
     width: 125%; 
     height: 125%;
     background: url(${props => props.bg});
-    background-size:100%;
+    background-size:cover;
+    background-repeat: no-repeat;
     filter: brightness(50%) opacity(50%) blur(5px);
   }
 
