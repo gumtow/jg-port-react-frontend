@@ -18,8 +18,8 @@ const About = (props) => {
     disableMutationObserver: false, // disables automatic mutations' detections (advanced)
     debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
     throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-    
-  
+
+
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 200, // offset (in px) from the original trigger point
     delay: 500, // values from 0 to 3000, with step 50ms
@@ -28,41 +28,40 @@ const About = (props) => {
     once: false, // whether animation should happen only once - while scrolling down
     mirror: true, // whether elements should animate out while scrolling past them
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-  
+
   });
 
   return (
     <div className="container-fluid" id="about">
       <div className="container" >
         <SectionMargin>
-          <Container data-aos="fade-up">
+          <Container>
             <Row>
               <Col md={6} className="align-items-center">
                 <div className="flex-div">
                   <Row>
-
-                    <h1 id="hello">Hello,</h1>
-                    <h5>
-                      I’m Jesse, a human-centered, front end software developer creating
-                      elegant solutions to complex problems. My creative personality
-                      pushes me to find opportunities to learn and develop tools that
-                      improve the lives of others.
+                    <Col>
+                      <h3 id="hello"  data-aos="fade-up" data-aos-delay="100">Hey there, my name is</h3>
+                      <h1 id="name"  data-aos="fade-up" data-aos-delay="200">Jesse Gumtow.</h1>
+                      <h1 id="tagline"  data-aos="fade-up" data-aos-delay="300">I am a developer, designer &amp; dad.</h1>
+                      <h5 id="intro"  data-aos="fade-up" data-aos-delay="400">
+                        I’m a front end software developer creating human-centered
+                        solutions to complex problems. My creative personality
+                        pushes me to find opportunities to learn and develop tools that
+                        improve the lives of others.
                 </h5>
-
+                    </Col>
                   </Row>
                   <Row>
-                    <Col md={6} style={{ "padding-left": 0 }}>
-                      <Button variant="outline-dark" block>work</Button>
-                    </Col>
                     <Col md={6}>
-                      <Button variant="outline-info" href="mailto:gumtow@gmail.com" block>Let's Connect</Button>
+                      <Button id="connect" variant="outline-info" href="mailto:gumtow@gmail.com" data-aos="fade-up" data-aos-delay="800" block>Let's Connect</Button>
                     </Col>
                   </Row>
                 </div>
               </Col>
               <Col md={6} className="align-items-center">
                 <div className="flex-div">
-                  <img src="https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png" alt="Jesse Gumtow" />
+                  <img src="https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png" alt="Jesse Gumtow"  data-aos="fade-down" />
                 </div>
               </Col>
             </Row>

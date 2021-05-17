@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
 
 const Navigation = () => {
 
@@ -18,6 +18,9 @@ const Navigation = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link href="#links">Other</Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Button variant="outline-info">Resume</Button>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>

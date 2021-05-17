@@ -32,7 +32,30 @@ h1, h5 {
 }
 
 #hello {
-  font-size: 8rem;
+  font-size: 1.5rem;
+}
+
+#name {
+  font-weight: bold;
+  font-size: 4rem;;
+  line-height: 1.25;
+}
+
+#tagline {
+  font-weight:bold;
+  font-size: 2.5rem;
+  color:#18a095;
+  line-height:1;
+}
+
+#intro {
+  font-size:1.75rem;
+  line-height: 1.5;
+  padding-top: 3rem;
+}
+
+#connect {
+  margin-top:3rem;
 }
 
 #profile-img {
