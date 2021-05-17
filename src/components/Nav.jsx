@@ -5,7 +5,7 @@ const Navigation = () => {
 
     return (
         <Container>
-            <Navbar bg="none" expand="lg">
+            <Navbar fixed="top" bg="none" expand="lg">
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Brand>Jesse Gumtow</Navbar.Brand>
                 <Navbar.Collapse className="justify-content-end mr-auto" id="basic-navbar-nav">

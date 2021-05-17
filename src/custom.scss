@@ -1,0 +1,17 @@
+/* make the customizations */
+$theme-colors: (
+        "primary": #02c39a,
+        "teal": #028090,
+        "secondary": #05668D,
+        "sub": #f0f3bd,
+        "text": #444444
+);
+
+$border-radius: 10rem;
+$font-family-sans-serif: 'Open Sans', sans-serif;
+
+
+
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap";

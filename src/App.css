@@ -9,7 +9,7 @@
   background: linear-gradient(45deg, rgba(224, 241, 247, 1) 0%, rgba(243, 255, 251, 1) 66%, rgba(240, 240, 240, 1) 100%);
 }
 
-h1, h5 {
+h5 {
   font-weight: 100;
   line-height: 1.5;
 }
@@ -23,6 +23,10 @@ h1, h5 {
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
+}
+
+#projects{
   min-height: 100vh;
 }
 
@@ -70,6 +74,16 @@ h1, h5 {
   height: 10rem;
 }
 
+.nav-item{
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}
+
+.title{
+  padding-bottom:2rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
 
 .row {
   margin-bottom: 1rem;

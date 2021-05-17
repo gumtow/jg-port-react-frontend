@@ -31,7 +31,7 @@ const Projects = (props) => {
   
     // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
     offset: 200, // offset (in px) from the original trigger point
-    delay: 250, // values from 0 to 3000, with step 50ms
+    delay: 300, // values from 0 to 3000, with step 50ms
     duration: 1000, // values from 0 to 3000, with step 50ms
     easing: 'ease', // default easing for AOS animations
     once: false, // whether animation should happen only once - while scrolling down
@@ -47,7 +47,7 @@ const Projects = (props) => {
         <SectionMargin>
           <div id="project-module">
             <FlexCenter>
-              <h2>Recent Projects</h2>
+              <h1 className="title" data-aos="fade-down" data-aos-delay="100">Recent Projects</h1>
             </FlexCenter>
             <Container data-aos="fade-up">
               <Row>
