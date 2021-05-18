@@ -17,7 +17,7 @@ const Navigation = () => {
     return (
         <Container>
             <Navbar className={navbar ? 'active' : ''} fixed="top" bg="none" expand="lg">
-                <Container>
+                <Container id="main-nav">
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Brand>Jesse Gumtow</Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end mr-auto" id="basic-navbar-nav">
