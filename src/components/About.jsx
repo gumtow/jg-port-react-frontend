@@ -37,14 +37,20 @@ const About = (props) => {
         <SectionMargin>
           <Container>
             <Row>
-              <Col md={6} className="align-items-center">
+              <Col md={6} className="align-items-center d-none d-sm-none d-md-none d-lg-block">
+                <div className="flex-div">
+                  <img src="https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png" alt="Jesse Gumtow" data-aos="fade-down" />
+                </div>
+              </Col>
+              <Col lg={6} className="align-items-center">
                 <div className="flex-div">
                   <Row>
+
                     <Col>
-                      <h3 id="hello"  data-aos="fade-up" data-aos-delay="100">Hey there, my name is</h3>
-                      <h1 id="name"  data-aos="fade-up" data-aos-delay="200">Jesse Gumtow.</h1>
-                      <h1 id="tagline"  data-aos="fade-up" data-aos-delay="300">I am a developer, designer &amp; dad.</h1>
-                      <h5 id="intro"  data-aos="fade-up" data-aos-delay="400">
+                      <h3 id="hello" data-aos="fade-up" data-aos-delay="100">Hey there, my name is</h3>
+                      <h1 id="name" data-aos="fade-up" data-aos-delay="200">Jesse Gumtow.</h1>
+                      <h1 id="tagline" data-aos="fade-up" data-aos-delay="300">I am a developer, designer &amp; dad.</h1>
+                      <h5 id="intro" data-aos="fade-up" data-aos-delay="400">
                         I’m a front end software developer creating human-centered
                         solutions to complex problems. My creative personality
                         pushes me to find opportunities to learn and develop tools that
@@ -53,17 +59,13 @@ const About = (props) => {
                     </Col>
                   </Row>
                   <Row>
-                    <Col md={6}>
+                    <Col lg={6}>
                       <Button id="connect" variant="outline-info" href="mailto:gumtow@gmail.com" data-aos="fade-up" data-aos-delay="800" block>Let's Connect</Button>
                     </Col>
                   </Row>
                 </div>
               </Col>
-              <Col md={6} className="align-items-center">
-                <div className="flex-div">
-                  <img src="https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png" alt="Jesse Gumtow"  data-aos="fade-down" />
-                </div>
-              </Col>
+
             </Row>
 
           </Container>
