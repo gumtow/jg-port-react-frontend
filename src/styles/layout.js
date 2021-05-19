@@ -12,6 +12,10 @@ export const FlexCenter = styled.div`
 
 export const SectionMargin = styled.div`
   padding: 2rem 3rem;
+  
+  @media (max-width: 992px) {
+    padding:0;
+  }
 `;
 
 export const ProjectStyle = styled.div`
