@@ -1,15 +1,56 @@
-
-
 /* make the customizations */
 $theme-colors: (
-        primary: #02c39a
+        primary: #02c39a,
 );
 
 $border-radius: 10rem;
-$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-sans-serif: "Open Sans", sans-serif;
 
+#hello {
+        font-size: 1.5rem;
 
+        @media (max-width: 992px) {
+                font-size: 1rem;
+        }
+}
 
+#name {
+        font-weight: bold;
+        font-size: 4rem;
+        line-height: 1.25;
+        margin-top: 1rem;
+        @media (max-width: 992px) {
+                font-size: 2rem;
+        }
+}
+
+#tagline {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #18a095;
+        line-height: 1.25;
+        margin-top: 1rem;
+        @media (max-width: 992px) {
+                font-size: 1.5rem;
+        }
+}
+
+#intro {
+        font-size: 1.75rem;
+        line-height: 1.5;
+        padding-top: 2rem;
+        @media (max-width: 992px) {
+                font-size: 1rem;
+        }
+}
+
+#connect {
+        margin-top: 2rem;
+        @media (max-width: 992px) {
+                padding: .5rem;
+                font-size: 1.5rem;
+        }
+}
 
 /* import bootstrap to set changes */
 @import "../node_modules/bootstrap";

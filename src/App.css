@@ -14,13 +14,13 @@ h5 {
   line-height: 1.5;
 }
 
-#main-nav{
+#main-nav {
   flex-direction: row-reverse;
 }
 
-@media (min-width:991px){
+@media (min-width:991px) {
   #main-nav {
-    flex-direction:row;
+    flex-direction: row;
   }
 }
 
@@ -34,10 +34,9 @@ h5 {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-
 }
 
-#projects{
+#projects {
   min-height: 85vh;
 }
 
@@ -50,37 +49,9 @@ h5 {
   color: #ffffff;
 }
 
-#hello {
-  font-size: 1.5rem;
-}
-
-#name {
-  font-weight: bold;
-  font-size: 4rem;;
-  line-height: 1.25;
-}
-
-#tagline {
-  font-weight:bold;
-  font-size: 2.5rem;
-  color:#18a095;
-  line-height:1;
-}
-
-#intro {
-  font-size:1.75rem;
-  line-height: 1.5;
-  padding-top: 3rem;
-}
-
-#connect {
-  margin-top:3rem;
-}
-
 #profile-img {
   max-width: 300px;
 }
-
 
 #footer {
   position: absolute;
@@ -89,22 +60,23 @@ h5 {
   height: 10rem;
 }
 
-.navbar{
+.navbar {
   transition: all 1s;
 }
 
-.navbar.active{
-  background-color:rgba(255, 255, 255, 0.95);
+.navbar.active {
+  background-color: rgba(255, 255, 255, 0.95);
   transition: all .5s;
   box-shadow: 0 3px 10px #292a3318;
 }
-.nav-item{
+
+.nav-item {
   margin-left: 2rem;
   font-size: 1.25rem;
 }
 
-.title{
-  padding-bottom:2rem;
+.title {
+  padding-bottom: 2rem;
   font-size: 4rem;
   font-weight: bold;
 }
