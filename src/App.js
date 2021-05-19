@@ -1,4 +1,5 @@
 import "./App.css";
+import "./custom.scss"
 import Main from "./components/Main";
 
 function App() {
