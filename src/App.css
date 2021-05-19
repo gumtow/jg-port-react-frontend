@@ -45,8 +45,8 @@ h5 {
 }
 
 #footer {
-  background-color: #292a33;
-  color: #ffffff;
+  background-color: var(--dark);
+  color: var(--light);
 }
 
 #profile-img {

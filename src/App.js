@@ -1,5 +1,6 @@
-import "./App.css";
+
 import "./custom.scss"
+import "./App.css";
 import Main from "./components/Main";
 
 function App() {

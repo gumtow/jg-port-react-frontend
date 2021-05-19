@@ -1,10 +1,39 @@
-/* make the customizations */
-$theme-colors: (
-        primary: #02c39a,
-);
+/*! `Custom` Bootstrap 4 theme */
+@import url(https://use.fontawesome.com/releases/v5.0.10/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700);
+$font-family-base:Open Sans;
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,400,700);
+$headings-font-family:Nunito;
 
-$border-radius: 10rem;
-$font-family-sans-serif: "Open Sans", sans-serif;
+$enable-grid-classes:false;
+$primary:#2f3c48;
+$secondary:#6f7f8c;
+$success:#3e4d59;
+$danger:#cc330d;
+$info:#5c8f94;
+$warning:#6e9fa5;
+$light:#eceeec;
+$dark:#1e2b37;
+$enable-gradients:false;
+$spacer:1rem;
+$border-width:1px;
+$btn-border-radius:1.35rem;
+
+
+// Add SASS theme customizations here..
+
+
+
+// /* make the customizations */
+// $theme-colors: (
+//         primary: #02c39a,
+//         info: #2fb1e0
+
+
+// );
+
+// $border-radius: 10rem;
+// $font-family-sans-serif: "Open Sans", sans-serif;
 
 #hello {
         font-size: 1.5rem;
@@ -27,7 +56,7 @@ $font-family-sans-serif: "Open Sans", sans-serif;
 #tagline {
         font-weight: bold;
         font-size: 2.5rem;
-        color: #18a095;
+        color: var(--secondary);
         line-height: 1.25;
         margin-top: 1rem;
         @media (max-width: 992px) {
