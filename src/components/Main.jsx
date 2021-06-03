@@ -1,6 +1,7 @@
 import React from "react";
 
 import Navigation from "./Nav";
+import Hero from "./Hero";
 import About from "./About";
 import Projects from "./Projects";
 import Links from "./Links";
@@ -15,6 +16,7 @@ const Main = (props) => {
     <div>
       <div className="content-wrap">
         <Navigation />
+        <Hero />
         <About />
         <Projects />
         <Links />

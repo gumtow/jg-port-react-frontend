@@ -24,7 +24,7 @@ h5 {
   }
 }
 
-#about {
+#hero {
   background-size: contain;
   background-position: top right;
   background-repeat: no-repeat;
@@ -45,8 +45,8 @@ h5 {
 }
 
 #footer {
-  background-color: var(--dark);
-  color: var(--light);
+  background-color: none;
+  color: var(--dark);
 }
 
 #profile-img {

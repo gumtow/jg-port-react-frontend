@@ -1,11 +1,17 @@
 import React from "react";
-import { SectionMargin } from "../styles/layout";
+import { SectionMargin, FlexCenter } from "../styles/layout";
 
 const Footer = (props) => {
   return (
     <div className="container-fluid" id="footer">
       <div className="container">
-        <SectionMargin>Footer</SectionMargin>
+        <SectionMargin>
+          <FlexCenter>
+            <p>
+            Designed &amp; Developed by Jesse Gumtow
+            </p>
+          </FlexCenter>
+        </SectionMargin>
       </div>
     </div>
   );
