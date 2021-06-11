@@ -37,7 +37,7 @@ const Project = (props) => {
             <Row style={{ "width": "100%" }}>
               <Col lg={12}>
 
-                <h3 style={{ "text-align": "center" }}>{props.project.title.rendered}</h3>
+                <h3 style={{ "textAlign": "center" }}>{props.project.title.rendered}</h3>
 
               </Col>
             </Row>
