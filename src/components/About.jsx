@@ -60,7 +60,7 @@ const About = (props) => {
                                 </Col>
                                 <Col md={8} className="align-items-center">
                                     <div className="flex-div">
-                                        <p>{ wpPage.content.rendered }</p>
+                                        <div dangerouslySetInnerHTML={{ __html: wpPage.content ?  wpPage.content.rendered : "loading..."}}/>
                                     </div>
 
 
