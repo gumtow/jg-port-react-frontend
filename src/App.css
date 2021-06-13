@@ -36,6 +36,14 @@ h5 {
   min-height: 100vh;
 }
 
+#about {
+  margin-bottom:4rem;
+}
+
+#about p {
+  font-size: 1.5rem;
+}
+
 #projects {
   min-height: 85vh;
 }

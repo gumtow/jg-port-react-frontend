@@ -32,7 +32,7 @@ const Navigation = () => {
                                 <Nav.Link href="#links">Other</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Button variant="outline-info">Resume</Button>
+                                <Button href="https://docs.google.com/document/d/1I2SgsvK3_ea_nXPFWGuWUSmGEhXUSzV_D_jknkqjALY/edit?usp=sharing" variant="outline-info">Resume</Button>
                             </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
