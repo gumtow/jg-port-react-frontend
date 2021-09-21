@@ -39,7 +39,7 @@ const Hero = (props) => {
             <Row>
               <Col md={6} className="align-items-center d-none d-sm-none d-md-none d-lg-block">
                 <div className="flex-div">
-                  <img src="https://api.jessegumtow.com/wp-content/uploads/2021/05/JG-3D-nodes.png" alt="Jesse Gumtow" data-aos="fade-down" />
+                  <img src="https://jgapi.dreamhosters.com/wp-content/uploads/2021/09/JG-3D-nodes.png" alt="Jesse Gumtow" data-aos="fade-down" />
                 </div>
               </Col>
               <Col lg={6} className="align-items-center">

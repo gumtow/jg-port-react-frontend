@@ -20,7 +20,7 @@ const Links = (props) => {
 
   React.useEffect(() => {
     axios
-      .get("https://api.jessegumtow.com/wp-json/wp/v2/links")
+      .get("https://jgapi.dreamhosters.com/wp-json/wp/v2/link")
       .then((res) => setWpLinks(res.data.reverse()))
       .catch((e) => console.log(e));
   }, []);

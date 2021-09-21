@@ -12,7 +12,7 @@ const Project = (props) => {
           <div className="project-clicked" >
             <Row>
               <Col lg={12}>
-                <p>{props.project.acf.project_description}</p>
+                <p>{props.project.acf.description}</p>
               </Col>
             </Row>
             <Row>
@@ -33,7 +33,7 @@ const Project = (props) => {
     return (
       <Col lg={6}>
         <Container onClick={() => setClicked(!clicked)}>
-          <ProjectStyle bg={props.project.acf.project_main_image.url} className="flex-div">
+          <ProjectStyle bg={props.project.acf.main_image} className="flex-div">
             <Row style={{ "width": "100%" }}>
               <Col lg={12}>
 

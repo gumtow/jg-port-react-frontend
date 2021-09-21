@@ -13,7 +13,7 @@ const About = (props) => {
 
     React.useEffect(() => {
         axios
-            .get("https://api.jessegumtow.com/wp-json/wp/v2/pages/12")
+            .get("https://jgapi.dreamhosters.com/wp-json/wp/v2/pages/11")
             .then((res) => setWpPage(res.data))
             .catch((e) => console.log(e));
     }, []);
@@ -55,7 +55,7 @@ const About = (props) => {
 
                                 <Col md={4} className="align-items-center">
                                     <div className="flex-div">
-                                        <Image alt="Jesse Gumtow" src="https://api.jessegumtow.com/wp-content/uploads/2021/04/Circle_jg-profile.png" fluid />
+                                        <Image alt="Jesse Gumtow" src="https://jgapi.dreamhosters.com/wp-content/uploads/2021/09/Circle_jg-profile.png" fluid />
                                     </div>
                                 </Col>
                                 <Col md={8} className="align-items-center">
