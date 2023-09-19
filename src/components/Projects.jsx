@@ -12,7 +12,7 @@ const Projects = (props) => {
 
   React.useEffect(() => {
     axios
-      .get("https://jgapi.dreamhosters.com//wp-json/wp/v2/project")
+      .get("https://jgapi.dreamhosters.com/wp-json/wp/v2/project")
       .then((res) => setWpProjects(res.data))
       .catch((e) => console.log(e));
   }, []);
